@@ -10,17 +10,17 @@ I gathered WeRateDogs twitter account additional data (retweet count and favorit
 After performing visual and programmatic assessments of datasets I found following quality and tidiness issues.
 
 Quality issues
-Completeness: Missing values of dog stages and dog names (can't clean)
-Accuracy: Replace missing values named as None with NaN in name and dog stages columns
-Validity: Erroneous datatypes of tweet id, it should be string not integer
-Accuracy: Investigate name column for incorrect names as some of the dog names seemed inaccurate (all, my, not, a, an, the, by, such)
-Consistency: Only those tweet ids who have image predictions in the image prediction table
-Accuracy: Inaccurate values of rating denominator
-Accuracy: Inaccurate values of rating numerator
-Validity: Timestamp, retweeted_status_timestamp datatype is of string, it should be datetime
-Consistency: We want original ratings so remove tweet ids which are retweets
+- Completeness: Missing values of dog stages and dog names (can't clean)
+- Accuracy: Replace missing values named as None with NaN in name and dog stages columns
+- Validity: Erroneous datatypes of tweet id, it should be string not integer
+- Accuracy: Investigate name column for incorrect names as some of the dog names seemed inaccurate (all, my, not, a, an, the, by, such)
+- Consistency: Only those tweet ids who have image predictions in the image prediction table
+- Accuracy: Inaccurate values of rating denominator
+- Accuracy: Inaccurate values of rating numerator
+- Validity: Timestamp, retweeted_status_timestamp datatype is of string, it should be datetime
+- Consistency: We want original ratings so remove tweet ids which are retweets
 
 Tidiness issues
-Melt the columns doggo, floofer, pupper and puppo as these column headers are values instead of variable names, variable name is dog stage in the archive table (wrd_archive)
-Split text column of archive table into two separate columns (tweet_text and tweet_url)
-Merge the archive (wrd_archive), archive additional (wrd_archive_add) and image prediction (wrd_image_prediction) tables
+- Melt the columns doggo, floofer, pupper and puppo as these column headers are values instead of variable names, variable name is dog stage in the archive table (wrd_archive)
+- Split text column of archive table into two separate columns (tweet_text and tweet_url)
+- Merge the archive (wrd_archive), archive additional (wrd_archive_add) and image prediction (wrd_image_prediction) tables
