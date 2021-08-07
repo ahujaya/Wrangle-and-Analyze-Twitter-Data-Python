@@ -4,7 +4,7 @@ The dataset that I will be wrangling, analyzing and visualizing is the tweet arc
 ## Gathering Data
 I gathered WeRateDogs twitter archive data by downloading the file provided to me via link by the Udacity and then loaded that archive data in csv format.
 I gathered WeRateDogs tweet image predictions hosted on Udacity's servers (in tsv format) by dowloading that file programmatically using requests library.
-I gathered WeRateDogs twitter account additional data (retweet count and favorite ("like") count) through Twitter API and the python tweepy library. Using the tweet IDs in the WeRateDogs Twitter archive, I query the Twitter API for each tweet's JSON data using tweepy library and stored each tweet's entire set of JSON data in a file called tweet_json.txt file. Finally, I read the twitter json data from tweet_json.txt file by converting each json string into python dictionary and appending them to a list (row by row) and this list of dictionaries was eventually converted to a python pandas DataFrame.
+I gathered WeRateDogs twitter account additional data (retweet count and favorite ("like") count) through Twitter API and the python tweepy library. Using the tweet IDs in the WeRateDogs Twitter archive, I queried the Twitter API for each tweet's JSON data using tweepy library and stored each tweet's entire set of JSON data in a file called tweet_json.txt file. Finally, I read the twitter json data from tweet_json.txt file by converting each json string into python dictionary and appending them to a list (row by row) and this list of dictionaries was eventually converted to a python pandas DataFrame.
 
 ## Assessing Data
 After performing visual and programmatic assessments of datasets I found following quality and tidiness issues.
