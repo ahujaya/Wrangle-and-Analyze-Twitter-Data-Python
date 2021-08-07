@@ -21,6 +21,6 @@ Quality issues
 - Consistency: We want original ratings so remove tweet ids which are retweets
 
 Tidiness issues
-- Melt the columns doggo, floofer, pupper and puppo as these column headers are values instead of variable names, variable name is dog stage in the archive table (wrd_archive)
+- Melting the columns doggo, floofer, pupper and puppo as these column headers are values instead of variable names, variable name is dog stage in the archive table (wrd_archive)
 - Split text column of archive table into two separate columns (tweet_text and tweet_url)
 - Merge the archive (wrd_archive), archive additional (wrd_archive_add) and image prediction (wrd_image_prediction) tables
